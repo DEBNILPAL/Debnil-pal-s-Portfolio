@@ -14,6 +14,22 @@
             animation: gradientBackground 10s infinite alternate;
             font-size: 18px; /* Increased font size */
         }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem; /* Space between image and title */
+        }
+        
+        .profile-photo {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px; /* Keep it square */
+            border-radius: 50%; /* Makes the image circular */
+            border: 3px solid #fff; /* Add a border for better visibility */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for style */
+        }
+        
         header {
             background: linear-gradient(90deg, #adb9bf, #c394ab);
             color: #fff;
@@ -175,7 +191,10 @@
 </head>
 <body>
     <header>
-        <h1>Debnil Pal's Portfolio</h1>
+        <div class="header-container">
+            <img src="./debnil image.jpg" alt="Debnil Pal" class="profile-photo">
+            <h1>Debnil Pal's Portfolio</h1>
+        </div>
         <nav>
             <a href="javascript:void(0);" onclick="showSection('home')">Home</a>
             <a href="javascript:void(0);" onclick="showSection('about')">About</a>
